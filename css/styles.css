@@ -1,5 +1,5 @@
 * {
-  background-color: #3282B8;
+  background-color: #827397;
   padding: 0px;
   margin: 0px; }
 
@@ -24,4 +24,9 @@
 
 .card {
   width: 14rem;
+  border: 2px solid black; }
+
+.btn {
+  background-color: #363062;
+  color: white;
   border: 2px solid black; }
