@@ -35,7 +35,7 @@
     text-align: center;
     .btn{
         width: 5rem;
-        //APLICANDO EL MAP
+        //APLICANDO MAP
         font-size: map-get($font-size,'medium');
         background-color: $color_2;
         color: $font_color;
@@ -45,7 +45,8 @@
 
 .btn{
   width: 10rem;
-  font-size: 15px;
+  //APLICANDO MAP
+  font-size: map-get($font-size,'large');
   background-color: $color_2;
   color: $font_color;
   border:2px solid $border_color;
