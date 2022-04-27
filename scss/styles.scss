@@ -9,6 +9,7 @@
     color: $font_color;
 }
 
+//APLICANDO MIXINS
 .logo{
     @include imgs(110px,110px,5px)
 }
@@ -34,7 +35,8 @@
     text-align: center;
     .btn{
         width: 5rem;
-        font-size: 12px;
+        //APLICANDO EL MAP
+        font-size: map-get($font-size,'medium');
         background-color: $color_2;
         color: $font_color;
         border:2px solid $border_color;
