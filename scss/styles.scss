@@ -1,20 +1,21 @@
 @import "variables";  
-
+@import "mixins";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
 *{
-    background-color: $base_color;
+    background-color: $color_1;
     padding: 0px;
     margin: 0px;
+    font-family: 'Roboto Slab', serif;
+    color: $font_color;
 }
 
 .logo{
-    height: 100px;
-    width: 100px;
-    text-align: center;
-    img{
-        max-width: 100%;
-        max-height: 100%;
-    }
+    @include imgs(110px,110px,5px)
 }
+.calesita{
+    @include imgs(50rem,50rem,100px);
+}
+
 .main{
     display: flex;
     flex-direction: column;
@@ -28,12 +29,35 @@
   }
 
 .card{
-    width: 14rem;
+    width: 12rem;
     border: 2px solid $border_color;
+    text-align: center;
+    .btn{
+        width: 5rem;
+        font-size: 12px;
+        background-color: $color_2;
+        color: $font_color;
+        border:2px solid $border_color;
+    }
 }
 
 .btn{
-    background-color: $color_2;
-    color: white;
-    border:2px solid $border_color;
+  width: 10rem;
+  font-size: 15px;
+  background-color: $color_2;
+  color: $font_color;
+  border:2px solid $border_color;
 }
+
+.navbar-nav{
+    font-size: larger;
+}
+
+.formulario-contacto{
+    display: flex;
+    gap: 10px;
+}
+
+.animate__animated.animate__fadeIn {
+    --animate-duration: 3s;
+  }
