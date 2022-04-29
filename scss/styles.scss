@@ -16,7 +16,9 @@
 .calesita{
     @include imgs(50rem,50rem,100px);
 }
-
+.servicios{
+    @include imgs(20rem,20rem,20px)
+}
 .main{
     display: flex;
     flex-direction: column;
@@ -33,6 +35,8 @@
     width: 12rem;
     border: 2px solid $border_color;
     text-align: center;
+    background-color: $color_1;
+
     .btn{
         width: 5rem;
         //APLICANDO MAP
@@ -54,6 +58,11 @@
 
 .navbar-nav{
     font-size: larger;
+    font-size: map-get($font-size ,'large' );
+    .nav-item{
+        padding-left: 100px;
+    }
+      
 }
 
 .formulario-contacto{
@@ -61,6 +70,45 @@
     gap: 10px;
 }
 
+
 .animate__animated.animate__fadeIn {
     --animate-duration: 3s;
   }
+
+
+
+//MEDIA QUERIES
+
+@media (max-width: 576px) {
+    .card{
+        width: 8rem;
+        font-size: map-get($font-size,'small');
+        background-color: $color_1;
+
+        .btn{
+            width: 5rem;
+            //APLICANDO MAP
+            font-size: map-get($font-size,'medium');
+            background-color: $color_2;
+            color: $font_color;
+            border:2px solid $border_color;
+        }
+    }
+
+}
+
+
+@media (max-width: 768px) {
+   
+}
+
+
+@media (max-width: 992px) {
+
+}
+//large
+@media (min-width: 1200px) {
+    *{
+        background-color: $color_2 !important;
+    }
+}

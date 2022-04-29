@@ -24,6 +24,15 @@
     max-height: 100%;
     border-radius: 100px; }
 
+.servicios {
+  height: 20rem;
+  width: 20rem;
+  text-align: center; }
+  .servicios img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px; }
+
 .main {
   display: flex;
   flex-direction: column;
@@ -38,23 +47,27 @@
 .card {
   width: 12rem;
   border: 2px solid black;
-  text-align: center; }
+  text-align: center;
+  background-color: #4D4C7D; }
   .card .btn {
     width: 5rem;
-    font-size: 10px;
+    font-size: 0.75rem;
     background-color: #363062;
     color: white;
     border: 2px solid black; }
 
 .btn {
   width: 10rem;
-  font-size: 20px;
+  font-size: 1.25rem;
   background-color: #363062;
   color: white;
   border: 2px solid black; }
 
 .navbar-nav {
-  font-size: larger; }
+  font-size: larger;
+  font-size: 1.25rem; }
+  .navbar-nav .nav-item {
+    padding-left: 100px; }
 
 .formulario-contacto {
   display: flex;
@@ -62,3 +75,19 @@
 
 .animate__animated.animate__fadeIn {
   --animate-duration: 3s; }
+
+@media (max-width: 576px) {
+  .card {
+    width: 8rem;
+    font-size: 0.31rem;
+    background-color: #4D4C7D; }
+    .card .btn {
+      width: 5rem;
+      font-size: 0.75rem;
+      background-color: #363062;
+      color: white;
+      border: 2px solid black; } }
+
+@media (min-width: 1200px) {
+  * {
+    background-color: #363062 !important; } }
