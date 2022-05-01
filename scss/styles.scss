@@ -1,7 +1,8 @@
 @import "variables";  
 @import "mixins";
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
-*{
+
+body{
     background-color: $color_1;
     padding: 0px;
     margin: 0px;
@@ -19,6 +20,13 @@
 .servicios{
     @include imgs(20rem,20rem,20px)
 }
+
+.cabe{
+    background-color: $color_3;
+    border-radius: 20px;
+    margin: 25px;
+}
+
 
 .principal{
     display: flex;
@@ -41,6 +49,8 @@
     margin-top: 50px;
 }
 
+
+
 .card{
     width: 12rem;
     border: 2px solid $border_color;
@@ -51,7 +61,7 @@
         width: 5rem;
         //APLICANDO MAP
         font-size: map-get($font-size,'medium');
-        background-color: $color_2;
+        background-color: $color_3;
         color: $font_color;
         border:2px solid $border_color;
     }
@@ -107,7 +117,6 @@
 
 }
 
-
 @media (max-width: 768px) {
    
 }
@@ -118,7 +127,5 @@
 }
 //large
 @media (min-width: 1200px) {
-    *{
-        background-color: $color_1 !important;
-    }
+
 }

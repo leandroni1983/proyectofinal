@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap");
-* {
+body {
   background-color: #4D4C7D;
   padding: 0px;
   margin: 0px;
@@ -33,6 +33,11 @@
     max-height: 100%;
     border-radius: 20px; }
 
+.cabe {
+  background-color: #827397;
+  border-radius: 20px;
+  margin: 25px; }
+
 .principal, .main, .cuerpo, .cuerposervicios {
   display: flex;
   justify-content: space-evenly; }
@@ -55,7 +60,7 @@
   .card .btn {
     width: 5rem;
     font-size: 0.75rem;
-    background-color: #363062;
+    background-color: #827397;
     color: white;
     border: 2px solid black; }
 
@@ -90,7 +95,3 @@
       background-color: #363062;
       color: white;
       border: 2px solid black; } }
-
-@media (min-width: 1200px) {
-  * {
-    background-color: #4D4C7D !important; } }
