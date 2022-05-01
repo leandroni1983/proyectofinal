@@ -33,16 +33,19 @@
     max-height: 100%;
     border-radius: 20px; }
 
-.main {
+.principal, .main, .cuerpo, .cuerposervicios {
   display: flex;
+  justify-content: space-evenly; }
+
+.main {
   flex-direction: column;
-  justify-content: space-evenly;
   gap: 15px; }
 
 .cuerpo {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly; }
+  flex-direction: row; }
+
+.cuerposervicios {
+  margin-top: 50px; }
 
 .card {
   width: 12rem;
@@ -90,4 +93,4 @@
 
 @media (min-width: 1200px) {
   * {
-    background-color: #363062 !important; } }
+    background-color: #4D4C7D !important; } }

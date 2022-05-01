@@ -19,17 +19,27 @@
 .servicios{
     @include imgs(20rem,20rem,20px)
 }
-.main{
+
+.principal{
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
+}   
+
+.main{
+    @extend .principal;
+    flex-direction: column;
     gap: 15px;
 }
+
 .cuerpo{    
-    display: flex;
+    @extend .principal;
     flex-direction: row;
-    justify-content: space-evenly;
   }
+
+.cuerposervicios{
+    @extend .principal;
+    margin-top: 50px;
+}
 
 .card{
     width: 12rem;
@@ -109,6 +119,6 @@
 //large
 @media (min-width: 1200px) {
     *{
-        background-color: $color_2 !important;
+        background-color: $color_1 !important;
     }
 }
