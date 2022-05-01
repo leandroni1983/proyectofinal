@@ -21,13 +21,17 @@ body{
     @include imgs(20rem,20rem,20px)
 }
 
+.btn{
+    @include btn(10rem,'large',2px)
+}
+
 .cabe{
     background-color: $color_3;
     border-radius: 20px;
     margin: 25px;
 }
 
-
+// APLICANDO EXTEND
 .principal{
     display: flex;
     justify-content: space-evenly;
@@ -58,23 +62,19 @@ body{
     background-color: $color_1;
 
     .btn{
-        width: 5rem;
-        //APLICANDO MAP
-        font-size: map-get($font-size,'medium');
-        background-color: $color_3;
-        color: $font_color;
-        border:2px solid $border_color;
-    }
+        @include btn(5rem,'medium',2px)
+        }
 }
 
-.btn{
-  width: 10rem;
-  //APLICANDO MAP
-  font-size: map-get($font-size,'large');
-  background-color: $color_3;
-  color: $font_color;
-  border:2px solid $border_color;
-}
+
+// .btn{
+//   width: 10rem;
+//   //APLICANDO MAP
+//   font-size: map-get($font-size,'large');
+//   background-color: $color_3;
+//   color: $font_color;
+//   border:2px solid $border_color;
+// }
 
 .navbar-nav{
     font-size: larger;
