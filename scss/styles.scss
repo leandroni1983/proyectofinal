@@ -22,7 +22,7 @@ body{
 }
 
 .btn{
-    @include btn(10rem,'large',2px)
+    @include btn(10rem,'large',2px,2px)
 }
 
 .cabe{
@@ -60,9 +60,10 @@ body{
     border: 2px solid $border_color;
     text-align: center;
     background-color: $color_1;
-
+    
+    //Mixins
     .btn{
-        @include btn(5rem,'medium',2px)
+        @include btn(5rem,'medium',2px,2px)
         }
 }
 
@@ -104,15 +105,19 @@ body{
         width: 8rem;
         font-size: map-get($font-size,'small');
         background-color: $color_1;
-
+        
+        //Mixins
         .btn{
-            width: 5rem;
-            //APLICANDO MAP
-            font-size: map-get($font-size,'medium');
-            background-color: $color_2;
-            color: $font_color;
-            border:2px solid $border_color;
+        @include btn(5rem,'medium',2px,2px)
         }
+        // .btn{
+        //     width: 5rem;
+        //     //APLICANDO MAP
+        //     font-size: map-get($font-size,'medium');
+        //     background-color: $color_2;
+        //     color: $font_color;
+        //     border:2px solid $border_color;
+        // }
     }
 
 }
