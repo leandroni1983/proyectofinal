@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap");
 body {
-  background-color: #4D4C7D;
+  background-color: #006E7F;
   padding: 0px;
   margin: 0px;
   font-family: 'Roboto Slab', serif;
@@ -34,7 +34,7 @@ body {
     border-radius: 20px; }
 
 .cabe {
-  background-color: #827397;
+  background-color: #B22727;
   border-radius: 20px;
   margin: 25px; }
 
@@ -56,18 +56,18 @@ body {
   width: 12rem;
   border: 2px solid black;
   text-align: center;
-  background-color: #4D4C7D; }
+  background-color: #006E7F; }
   .card .btn {
     width: 5rem;
     font-size: 0.75rem;
-    background-color: #827397;
+    background-color: #B22727;
     color: white;
     border: 2px solid black; }
 
 .btn {
   width: 10rem;
   font-size: 1.25rem;
-  background-color: #363062;
+  background-color: #B22727;
   color: white;
   border: 2px solid black; }
 
@@ -88,10 +88,10 @@ body {
   .card {
     width: 8rem;
     font-size: 0.31rem;
-    background-color: #4D4C7D; }
+    background-color: #006E7F; }
     .card .btn {
       width: 5rem;
       font-size: 0.75rem;
-      background-color: #363062;
+      background-color: #F8CB2E;
       color: white;
       border: 2px solid black; } }
