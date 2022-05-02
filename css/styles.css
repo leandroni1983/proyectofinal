@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap");
-@use 'variables';
 body {
   background-color: #006E7F;
   padding: 0px;
