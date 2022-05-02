@@ -66,6 +66,7 @@ body {
   width: 12rem;
   border: 2px solid black;
   text-align: center;
+  align-items: center;
   background-color: #006E7F; }
   .card .btn {
     width: 5rem;
@@ -90,7 +91,7 @@ body {
 
 @media (max-width: 576px) {
   .card {
-    width: 7rem;
+    width: 6rem;
     font-size: 0.31rem;
     background-color: #006E7F; }
     .card .btn {

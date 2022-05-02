@@ -60,6 +60,7 @@ body{
     width: 12rem;
     border: 2px solid $border_color;
     text-align: center;
+    align-items: center;
     background-color: $color_1;
     
     //Mixins
@@ -103,7 +104,7 @@ body{
 
 @media (max-width: 576px) {
     .card{
-        width: 7rem;
+        width: 6rem;
         font-size: map-get($font-size,'small');
         background-color: $color_1;
         
