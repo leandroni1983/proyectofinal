@@ -48,11 +48,11 @@ body {
 
 .principal, .main, .cuerpo, .cuerposervicios {
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  gap: 15px; }
 
 .main {
-  flex-direction: column;
-  gap: 15px; }
+  flex-direction: column; }
 
 .cuerpo {
   flex-direction: row;

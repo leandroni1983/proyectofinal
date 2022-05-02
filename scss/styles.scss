@@ -35,12 +35,13 @@ body{
 .principal{
     display: flex;
     justify-content: space-evenly;
+    gap: 15px;
 }   
 
 .main{
     @extend .principal;
     flex-direction: column;
-    gap: 15px;
+
 }
 
 .cuerpo{    
