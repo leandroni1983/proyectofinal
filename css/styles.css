@@ -55,7 +55,8 @@ body {
   gap: 15px; }
 
 .cuerpo {
-  flex-direction: row; }
+  flex-direction: row;
+  gap: 15px; }
 
 .cuerposervicios {
   margin-top: 50px; }
@@ -88,7 +89,7 @@ body {
 
 @media (max-width: 576px) {
   .card {
-    width: 8rem;
+    width: 7rem;
     font-size: 0.31rem;
     background-color: #006E7F; }
     .card .btn {

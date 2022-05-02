@@ -46,6 +46,7 @@ body{
 .cuerpo{    
     @extend .principal;
     flex-direction: row;
+    gap: 15px;
   }
 
 .cuerposervicios{
@@ -102,7 +103,7 @@ body{
 
 @media (max-width: 576px) {
     .card{
-        width: 8rem;
+        width: 7rem;
         font-size: map-get($font-size,'small');
         background-color: $color_1;
         
