@@ -1,7 +1,6 @@
 @import "variables";  
 @import "mixins";
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
-@use 'variables';
 body{
     background-color: $color_1;
     padding: 0px;
