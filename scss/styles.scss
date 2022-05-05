@@ -1,74 +1,74 @@
-@import "variables";  
+@import "variables";
 @import "mixins";
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
-@use 'variables';
-body{
-    background-color: $color_1;
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Roboto Slab', serif;
-    color: $font_color;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap");
+
+body {
+  background-color: $color_1;
+  //background: linear-gradient(to left, $color_1, $color_4);
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto Slab", serif;
+  color: $font_color;
 }
 
 //APLICANDO MIXINS
-.logo{
-    @include imgs(110px,110px,5px)
+.logo {
+  @include imgs(110px, 110px, 5px);
 }
-.calesita{
-    @include imgs(50rem,50rem,100px);
+.calesita {
+  @include imgs(50rem, 50rem, 100px);
 }
-.servicios{
-    @include imgs(20rem,20rem,20px)
-}
-
-.btn{
-    @include btn(10rem,'large',2px,2px)
+.servicios {
+  @include imgs(20rem, 20rem, 20px);
 }
 
-.cabe{
-    background-color: $color_3;
-    border-radius: 20px;
-    margin: 25px;
+.btn {
+  @include btn(10rem, "large", 2px, 2px);
+}
+
+.cabe {
+  //background-color: $color_3;
+  background: linear-gradient(to bottom, $color_4, $color_3);
+  border-radius: 20px;
+  margin: 25px;
 }
 
 // APLICANDO EXTEND
-.principal{
-    display: flex;
-    justify-content: space-evenly;
-}   
-
-.main{
-    @extend .principal;
-    flex-direction: column;
-    gap: 15px;
+.principal {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.cuerpo{    
-    @extend .principal;
-    flex-direction: row;
-    gap: 15px;
+.main {
+  @extend .principal;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cuerpo {
+  @extend .principal;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.cuerposervicios {
+  @extend .principal;
+  margin-top: 50px;
+}
+
+.card {
+  width: 12rem;
+  border: 2px solid $border_color;
+  text-align: center;
+  align-items: center;
+  background-color: $color_1;
+  background: linear-gradient(to top, $color_1, $color_0);
+
+  //Mixins
+  .btn {
+    @include btn(5rem, "medium", 2px, 2px);
   }
-
-.cuerposervicios{
-    @extend .principal;
-    margin-top: 50px;
 }
-
-
-
-.card{
-    width: 12rem;
-    border: 2px solid $border_color;
-    text-align: center;
-    align-items: center;
-    background-color: $color_1;
-    
-    //Mixins
-    .btn{
-        @include btn(5rem,'medium',2px,2px)
-        }
-}
-
 
 // .btn{
 //   width: 10rem;
@@ -79,60 +79,51 @@ body{
 //   border:2px solid $border_color;
 // }
 
-.navbar-nav{
-    font-size: larger;
-    font-size: map-get($font-size ,'large' );
-    .nav-item{
-        padding-left: 100px;
-    }
-      
+.navbar-nav {
+  font-size: larger;
+  font-size: map-get($font-size, "large");
+  .nav-item {
+    padding-left: 100px;
+  }
 }
 
-.formulario-contacto{
-    display: flex;
-    gap: 10px;
+.formulario-contacto {
+  display: flex;
+  gap: 10px;
 }
-
 
 .animate__animated.animate__fadeIn {
-    --animate-duration: 3s;
-  }
-
-
+  --animate-duration: 3s;
+}
 
 //MEDIA QUERIES
 
 @media (max-width: 576px) {
-    .card{
-        width: 6rem;
-        font-size: map-get($font-size,'small');
-        background-color: $color_1;
-        
-        //Mixins
-        .btn{
-        @include btn(5rem,'medium',2px,2px)
-        }
-        // .btn{
-        //     width: 5rem;
-        //     //APLICANDO MAP
-        //     font-size: map-get($font-size,'medium');
-        //     background-color: $color_2;
-        //     color: $font_color;
-        //     border:2px solid $border_color;
-        // }
-    }
+  .card {
+    width: 6rem;
+    font-size: map-get($font-size, "small");
+    background-color: $color_1;
 
+    //Mixins
+    .btn {
+      @include btn(5rem, "medium", 2px, 2px);
+    }
+    // .btn{
+    //     width: 5rem;
+    //     //APLICANDO MAP
+    //     font-size: map-get($font-size,'medium');
+    //     background-color: $color_2;
+    //     color: $font_color;
+    //     border:2px solid $border_color;
+    // }
+  }
 }
 
 @media (max-width: 768px) {
-   
 }
 
-
 @media (max-width: 992px) {
-
 }
 //large
 @media (min-width: 1200px) {
-
 }

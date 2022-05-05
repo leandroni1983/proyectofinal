@@ -1,21 +1,22 @@
-@mixin imgs($height,$width,$border){
-    height: $height;
-    width: $width;
-    text-align: center;
-    img{
-        max-width: 100%;
-        max-height: 100%;
-        border-radius: $border;
-        }
+@mixin imgs($height, $width, $border) {
+  height: $height;
+  width: $width;
+  text-align: center;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: $border;
+  }
 }
 // $font-size:("small":0.31rem, "medium":0.75rem, "large":1.25rem,"xlarge":1.875rem);
 // colores en variables.scss
-@mixin btn($width,$fuente,$border,$margin){
-    width: $width;
-    margin:$margin ;
-    //APLICANDO MAP
-    font-size: map-get($font-size,$fuente);
-    background-color: $color_3;
-    color: $font_color;
-    border:$border solid $border_color;
-  }
+@mixin btn($width, $fuente, $border, $margin) {
+  width: $width;
+  margin: $margin;
+  //APLICANDO MAP
+  font-size: map-get($font-size, $fuente);
+  //background-color: $color_3;
+  background: linear-gradient(to top, $color_4, $color_3);
+  color: $font_color;
+  border: $border solid $border_color;
+}
