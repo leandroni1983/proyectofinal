@@ -1,14 +1,5 @@
 @import "variables";
 @import "mixins";
-<<<<<<< HEAD
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
-body{
-    background-color: $color_1;
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Roboto Slab', serif;
-    color: $font_color;
-=======
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap");
 
 body {
@@ -18,7 +9,6 @@ body {
   margin: 0px;
   font-family: "Roboto Slab", serif;
   color: $font_color;
->>>>>>> ramause
 }
 
 //APLICANDO MIXINS
@@ -44,22 +34,9 @@ body {
 }
 
 // APLICANDO EXTEND
-<<<<<<< HEAD
-.principal{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 15px;
-}   
-
-.main{
-    @extend .principal;
-    flex-direction: column;
-
-=======
 .principal {
   display: flex;
   justify-content: space-evenly;
->>>>>>> ramause
 }
 
 .main {
