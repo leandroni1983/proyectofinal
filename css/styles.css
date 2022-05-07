@@ -6,6 +6,12 @@ body {
   font-family: "Roboto Slab", serif;
   color: white; }
 
+.parallax {
+  height: 500px;
+  background-image: url("https://storage-asset.msi.com/event/vga/2019/get-Rush/images/mnt-02.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
+
 .logo {
   height: 110px;
   width: 110px;
@@ -33,6 +39,16 @@ body {
     max-height: 100%;
     border-radius: 20px; }
 
+.uno {
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #b22727;
+  border-radius: 20px;
+  margin: 25px; }
+  .uno img {
+    border-radius: 15px; }
+
 .btn {
   width: 10rem;
   margin: 2px;
@@ -46,7 +62,7 @@ body {
   border-radius: 20px;
   margin: 25px; }
 
-.principal, .main, .cuerpo, .cuerposervicios {
+.principal, .uno, .main, .cuerpo, .cuerposervicios {
   display: flex;
   justify-content: space-evenly; }
 
@@ -56,7 +72,7 @@ body {
 
 .cuerpo {
   flex-direction: row;
-  gap: 15px; }
+  gap: 10px; }
 
 .cuerposervicios {
   margin-top: 50px; }
@@ -91,9 +107,9 @@ body {
 
 @media (max-width: 576px) {
   .card {
-    width: 6rem;
+    width: 8rem;
     font-size: 0.31rem;
-    background-color: #006e7f; }
+    gap: 5px; }
     .card .btn {
       width: 5rem;
       margin: 2px;
