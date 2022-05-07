@@ -11,6 +11,13 @@ body {
   color: $font_color;
 }
 
+.parallax {
+  height: 500px;
+  background-image: url("https://storage-asset.msi.com/event/vga/2019/get-Rush/images/mnt-02.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 //APLICANDO MIXINS
 .logo {
   @include imgs(110px, 110px, 5px);
@@ -18,10 +25,30 @@ body {
 .calesita {
   @include imgs(50rem, 50rem, 100px);
 }
+
 .servicios {
   @include imgs(20rem, 20rem, 20px);
 }
 
+// .inicio {
+//   @include imgs(30rem, 60rem, 20px);
+//   @extend .principal;
+//   align-content: center;
+//   align-items: center;
+//   justify-content: center;
+// }
+.uno {
+  @extend .principal;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: $color_3;
+  border-radius: 20px;
+  margin: 25px;
+  img {
+    border-radius: 15px;
+  }
+}
 .btn {
   @include btn(10rem, "large", 2px, 2px);
 }
@@ -48,7 +75,7 @@ body {
 .cuerpo {
   @extend .principal;
   flex-direction: row;
-  gap: 15px;
+  gap: 10px;
 }
 
 .cuerposervicios {
@@ -100,10 +127,10 @@ body {
 
 @media (max-width: 576px) {
   .card {
-    width: 6rem;
+    width: 8rem;
     font-size: map-get($font-size, "small");
-    background-color: $color_1;
-
+    //background-color: $color_1;
+    gap: 5px;
     //Mixins
     .btn {
       @include btn(5rem, "medium", 2px, 2px);
