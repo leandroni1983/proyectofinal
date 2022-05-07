@@ -117,3 +117,8 @@ body {
       background: linear-gradient(to top, #ee5007, #b22727);
       color: white;
       border: 2px solid black; } }
+
+@media (max-width: 768px) {
+  .principal, .uno, .main, .cuerpo, .cuerposervicios {
+    display: flex;
+    flex-wrap: wrap; } }

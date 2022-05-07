@@ -30,13 +30,6 @@ body {
   @include imgs(20rem, 20rem, 20px);
 }
 
-// .inicio {
-//   @include imgs(30rem, 60rem, 20px);
-//   @extend .principal;
-//   align-content: center;
-//   align-items: center;
-//   justify-content: center;
-// }
 .uno {
   @extend .principal;
   align-items: center;
@@ -135,22 +128,19 @@ body {
     .btn {
       @include btn(5rem, "medium", 2px, 2px);
     }
-    // .btn{
-    //     width: 5rem;
-    //     //APLICANDO MAP
-    //     font-size: map-get($font-size,'medium');
-    //     background-color: $color_2;
-    //     color: $font_color;
-    //     border:2px solid $border_color;
-    // }
   }
 }
 
 @media (max-width: 768px) {
+  .principal {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 992px) {
 }
+
 //large
 @media (min-width: 1200px) {
 }
