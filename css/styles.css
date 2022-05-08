@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap");
 body {
-  background-color: #006e7f;
   padding: 0px;
   margin: 0px;
   font-family: "Roboto Slab", serif;
@@ -43,7 +42,6 @@ body {
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  background-color: #b22727;
   border-radius: 20px;
   margin: 25px; }
   .uno img {
@@ -53,12 +51,12 @@ body {
   width: 10rem;
   margin: 2px;
   font-size: 1.25rem;
-  background: linear-gradient(to top, #ee5007, #b22727);
+  background: linear-gradient(to bottom, #7787da, #8407ee);
   color: white;
   border: 2px solid black; }
 
 .cabe {
-  background: linear-gradient(to bottom, #ee5007, #b22727);
+  background: linear-gradient(to top, #8407ee, #7787da);
   border-radius: 20px;
   margin: 25px; }
 
@@ -83,12 +81,12 @@ body {
   text-align: center;
   align-items: center;
   background-color: #006e7f;
-  background: linear-gradient(to top, #006e7f, #033d47); }
+  background: linear-gradient(to top, #8407ee, #7787da); }
   .card .btn {
     width: 5rem;
     margin: 2px;
     font-size: 0.75rem;
-    background: linear-gradient(to top, #ee5007, #b22727);
+    background: linear-gradient(to bottom, #7787da, #8407ee);
     color: white;
     border: 2px solid black; }
 
@@ -108,13 +106,13 @@ body {
 @media (max-width: 576px) {
   .card {
     width: 8rem;
-    font-size: 0.31rem;
+    font-size: 0.41rem;
     gap: 5px; }
     .card .btn {
-      width: 5rem;
+      width: 4rem;
       margin: 2px;
-      font-size: 0.75rem;
-      background: linear-gradient(to top, #ee5007, #b22727);
+      font-size: 0.41rem;
+      background: linear-gradient(to bottom, #7787da, #8407ee);
       color: white;
       border: 2px solid black; } }
 

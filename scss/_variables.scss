@@ -1,7 +1,7 @@
 //MAPEO DE TAMAÑO DE FUENTES
 //$font-size:("small":5px, "medium":12px, "large":20px,"xlarge":30px);
 $font-size: (
-  "small": 0.31rem,
+  "small": 0.41rem,
   "medium": 0.75rem,
   "large": 1.25rem,
   "xlarge": 1.875rem,
@@ -9,6 +9,8 @@ $font-size: (
 
 $border_color: black;
 $font_color: white;
+$color_5: #8407ee;
+$color_6: #7787da;
 
 // PALETAS DE COLORES PARA LA PAGINA (COMENTA / DESCOMENTA PARA CAMBIARLOS )
 
@@ -26,10 +28,11 @@ $font_color: white;
 // $color_2:rgb(3, 83, 151);
 // $color_3:rgb(3, 83, 151);
 // $color_4:rgb(3, 83, 151);
-$color_0: #033d47;
+
 $color_1: #006e7f;
 $color_2: #f8cb2e;
 $color_4: #ee5007;
 $color_3: #b22727;
+
 //$color_1: linear-gradient(90deg, rgba(2,0,36,1) 0%,rgba(0,212,255,1) 25%,rgba(0,92,127,1) 100%);
 //$color_3: linear-gradient(90deg, rgba(238,80,7,1) 0%, rgba(178,39,39,1) 25%);

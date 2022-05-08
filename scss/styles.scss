@@ -3,8 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap");
 
 body {
-  background-color: $color_1;
-  //background: linear-gradient(to left, $color_1, $color_4);
   padding: 0px;
   margin: 0px;
   font-family: "Roboto Slab", serif;
@@ -35,7 +33,7 @@ body {
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  background-color: $color_3;
+  //background-color: $color_3;
   border-radius: 20px;
   margin: 25px;
   img {
@@ -47,8 +45,7 @@ body {
 }
 
 .cabe {
-  //background-color: $color_3;
-  background: linear-gradient(to bottom, $color_4, $color_3);
+  background: linear-gradient(to top, $color_5, $color_6);
   border-radius: 20px;
   margin: 25px;
 }
@@ -82,7 +79,7 @@ body {
   text-align: center;
   align-items: center;
   background-color: $color_1;
-  background: linear-gradient(to top, $color_1, $color_0);
+  background: linear-gradient(to top, $color_5, $color_6);
 
   //Mixins
   .btn {
@@ -122,11 +119,10 @@ body {
   .card {
     width: 8rem;
     font-size: map-get($font-size, "small");
-    //background-color: $color_1;
     gap: 5px;
     //Mixins
     .btn {
-      @include btn(5rem, "medium", 2px, 2px);
+      @include btn(4rem, "small", 2px, 2px);
     }
   }
 }

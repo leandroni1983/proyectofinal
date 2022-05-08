@@ -15,7 +15,7 @@
   margin: $margin;
   //APLICANDO MAP
   font-size: map-get($font-size, $fuente);
-  background: linear-gradient(to top, $color_4, $color_3);
+  background: linear-gradient(to bottom, $color_6, $color_5);
   color: $font_color;
   border: $border solid $border_color;
 }
