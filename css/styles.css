@@ -38,15 +38,18 @@ body {
     max-height: 100%;
     border-radius: 20px; }
 
-.uno {
+.uno, .dos {
   align-items: center;
   gap: 1rem;
   padding: 1rem;
   border-radius: 20px;
   margin: 25px;
   font-size: 1.25rem; }
-  .uno img {
+  .uno img, .dos img {
     border-radius: 15px; }
+
+.dos {
+  flex-direction: column; }
 
 .btn {
   width: 10rem;
@@ -61,9 +64,10 @@ body {
   border-radius: 20px;
   margin: 25px; }
 
-.principal, .uno, .main, .cuerpo, .cuerposervicios {
+.principal, .uno, .dos, .main, .cuerpo, .cuerposervicios {
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  flex-direction: row; }
 
 .main {
   flex-direction: column;
@@ -118,6 +122,9 @@ body {
       border: 2px solid black; } }
 
 @media (max-width: 768px) {
-  .principal, .uno, .main, .cuerpo, .cuerposervicios {
-    display: flex;
+  .principal, .uno, .dos, .main, .cuerpo, .cuerposervicios {
     flex-wrap: wrap; } }
+
+@media (max-width: 1350px) {
+  .dos {
+    flex-direction: column; } }
