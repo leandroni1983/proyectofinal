@@ -36,6 +36,7 @@ body {
   //background-color: $color_3;
   border-radius: 20px;
   margin: 25px;
+  font-size: map-get($font-size, "large");
   img {
     border-radius: 15px;
   }
