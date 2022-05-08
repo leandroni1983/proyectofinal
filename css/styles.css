@@ -39,6 +39,7 @@ body {
     border-radius: 20px; }
 
 .uno, .dos {
+  text-align: center;
   align-items: center;
   gap: 1rem;
   padding: 1rem;
